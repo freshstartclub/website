@@ -1,0 +1,13 @@
+:root {
+    --primary: #000000;
+    --secondary: #333333;
+    --success: #34C759;
+    --warning: #FF9500;
+    --error: #FF3B30;
+    --background: #F2F2F7;
+    --surface: #FFFFFF;
+    --on-surface: #000000;
+    --on-surface-variant: #6C6C70;
+    --border: #C6C6C8;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
