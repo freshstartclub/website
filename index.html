@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/common.css">
 </head>
+
 <body>
     <div class="header">
         <div class="logo gray-hover"></div>
         <div class="header-logo-space"></div>
         <div class="header-button-space"></div>
+        <select id="select" class="language-selector">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
         <div class="button" data-link="https://www.instagram.com/freshstart.club" data-link-newtab>
             <i class="fa-brands fa-instagram" style="font-size: 1.5em;"></i>
         </div>
     </div>
     <div class="main">
-        <div class="main-background-image"></div>
-        <div class="main-message">
-            <div class="main-content-title">Fresh Start Club</div>
-            <div class="main-content-subtitle">How can we help save the environment?</div>
-            <div class="spacing" style="height: 0.5em"></div>
-            <div class="button-row">
-                <div class="button">Our Mission</div>
+        <div class="first-main">
+            <div class="main-background-image"></div>
+            <div class="main-message">
+                <div class="main-content-title">Fresh Start Club</div>
+                <div class="main-content-subtitle">How can we help save the environment?</div>
+                <div class="spacing" style="height: 0.5em"></div>
+                <div class="button-row">
+                    <div class="button">Take Action Now</div>
+                    <div class="button"
+                        onclick="document.querySelector('.our-mission-content').scrollIntoView({behavior: 'smooth'})">
+                        Our Mission</div>
+                </div>
+            </div>
+        </div>
+        <div class="our-mission-content">
+            <div class="falling-leaves"></div>
+            <div class="inner-content">
+                <div class="main-content-title" style="font-weight: 500">Is a future, where our environment is clean,
+                    possible?</div>
+                <br />
+                <span>Since the creation of Fresh Start (formerly Fresh Faces), in 2024, we've been on a mission to
+                    clean the environment, where people live. This includes schools, offices, playgrounds, beaches and
+                    all of the other places we adore.</span>
             </div>
         </div>
     </div>
+    <script src="js/i18n.js"></script>
     <script src="js/common.js"></script>
 </body>
+
 </html>

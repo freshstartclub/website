@@ -1,0 +1,30 @@
+#select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: var(--surface);
+    color: var(--on-surface);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid var(--border);
+    border-radius: 0.5em;
+    width: 200px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.2);
+}
+
+#select option {
+    background-color: var(--surface);
+    color: var(--on-surface);
+}
+
+#select::-ms-expand {
+    display: none;
+}
